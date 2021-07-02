@@ -1,0 +1,90 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>ECE Page</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/css/bootstrap.css'>
+<link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.0.13/css/all.css'><link rel="stylesheet" href="{% static 'pg2style.css'%}">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<div class="container">
+  <h1>Electronics and Communication Engineering</h1>
+  <h4>PSG Institute of Technology And Applied Research</h4>
+    <ul class="timeline">
+      
+        <li class="timeline">
+          <div class="icon done"></div>
+          <details class="panel">
+            <summary>Vision</summary>
+            <p>To produce globally competent and socially responsible electronics and communication engineers who will contribute towards the technological advancements in industry, research and academia.</p>       
+          </details>
+        </li>
+      
+        <li class="timeline">
+          <div class="icon done"></div>
+          <details class="panel">
+            <summary>Second Year Students</summary>
+            <img src="{{ece2yr}}" alt="ece_pic" class="center1">
+            <br>
+          </details>
+        </li>
+      
+        <li class="timeline">
+          <div class="icon working"></div>
+          <details class="panel">
+            <summary>ECE Boys</summary>
+            <img src="{{eceboys}}" alt="eceboys_pic" class="center">
+            <br>
+          </details>
+        </li>
+      
+        <li class="timeline">
+          <div class="icon"></div>
+          <details class="panel">
+            <summary>ECE Girls</summary>
+            <img src="{{ecegirls}}" alt="ecegirls_pic" class="center1">
+            <br>
+          </details>
+        </li>
+      
+        <li class="timeline">
+          <div class="icon"></div>
+          <details class="panel">
+            <summary>Post Your Achievements</summary>
+            <form action="" method="POST">
+                {% csrf_token %}
+                &emsp;&nbsp;Name : <input type='text' name='name' id='name'><br><br>
+                &emsp;&nbsp;Date of Achievement : <input type='date' name='doa' id='doa'><br><br>
+                &emsp;&nbsp;Upload Certificate : <input type='file' name='upload' id='upload' accept="image/*"><br><br>
+                &emsp;&nbsp;<input type='submit'><br><br>
+            </form>
+          </details>
+        </li>
+      
+        <li class="timeline">
+          <div class="icon"></div>
+          <details class="panel">
+            <summary>The Meaning of Life</summary>
+            <p>That’s right, yeah. I’ve had a team working on this over the past few weeks, and what we’ve come up with can be reduced to two fundamental concepts. One, people are not wearing enough hats. Two, matter is energy. In the Universe there are many energy fields which we cannot normally perceive. Some energies have a spiritual source which act upon a person’s soul. However, this soul does not exist ab initio as orthodox Christianity teaches; it has to be brought into existence by a process of guided self-observation. However, this is rarely achieved owing to man’s unique ability to be distracted from spiritual matters by everyday trivia.</p>
+          </details>
+        </li>
+      
+        <li class="timeline">
+          <div class="icon"></div>
+          <details class="panel">
+            <summary>Death</summary>
+            <p>Well, you're dead now, so shut up.</p>
+          </details>
+        </li>
+      
+    </ul>
+</div>
+<!-- partial -->
+  
+</body>
+</html>
